@@ -1,0 +1,83 @@
+.products {
+  margin: 20px 0px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.product_card {
+  width: 300px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 1px 0px 1px whitesmoke;
+}
+
+.product_card_header {
+  padding: 10px 10px;
+}
+
+.product_card_header .product_distributor {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.product_card_body {
+  display: flex;
+  padding: 10px 10px;
+  flex-direction: column;
+}
+
+.product_card_body span {
+  display: block;
+}
+
+.product_card_price_information {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.product_card_price_information span:global(.sale-tag)::after {
+  background-color: rgb(5, 192, 83);
+  color: white;
+  content: 'En venta';
+  width: 100%;
+  padding: 2px 4px;
+}
+
+.product_card_price_information span:global(.sale-tag):hover::after {
+  background-color: rgb(17, 206, 95);
+}
+
+.product_reference {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.product_card_image {
+  object-fit: cover;
+}
+
+.product_card_image img {
+  image-rendering: optimizeQuality;
+  width: 100%;
+}
+
+.product_card_actions {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.product_buy_button {
+  display: flex;
+  padding: 10px 14px;
+  background-color: rgb(243, 202, 22);
+  transition: all 0.18s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.product_buy_button:hover {
+  background-color: #13b;
+  color: white;
+  transition: all 0.18s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}

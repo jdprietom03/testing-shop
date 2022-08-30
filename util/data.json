@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Laptop HP GTX3090",
+    "price": "20000",
+    "distributor": "HP Company",
+    "currency": "COP",
+    "tags": ["Tecnology", "Gamer", "HP"],
+    "image": "https://http2.mlstatic.com/D_NQ_NP_971734-MLA48635086956_122021-O.jpg",
+    "reference": "95485"
+  },
+  {
+    "id": 2,
+    "title": "Laptop HP GTX3090",
+    "price": "240000",
+    "distributor": "HP Company",
+    "currency": "COP",
+    "tags": ["Tecnology", "Gamer", "HP"],
+    "image": "https://http2.mlstatic.com/D_NQ_NP_971734-MLA48635086956_122021-O.jpg",
+    "reference": "95486"
+  },
+  {
+    "id": 3,
+    "title": "Laptop HP GTX3090",
+    "price": "3420000",
+    "distributor": "HP Company",
+    "currency": "COP",
+    "tags": ["Tecnology", "Gamer", "HP"],
+    "image": "https://http2.mlstatic.com/D_NQ_NP_971734-MLA48635086956_122021-O.jpg",
+    "reference": "95487"
+  },
+  {
+    "id": 4,
+    "title": "Laptop HP GTX3090",
+    "price": "20000",
+    "distributor": "HP Company",
+    "currency": "COP",
+    "tags": ["Tecnology", "Gamer", "HP"],
+    "image": "https://http2.mlstatic.com/D_NQ_NP_971734-MLA48635086956_122021-O.jpg",
+    "reference": "95488"
+  },
+  {
+    "id": 5,
+    "title": "Laptop HP GTX3090",
+    "price": "20000",
+    "distributor": "HP Company",
+    "currency": "COP",
+    "tags": ["Tecnology", "Gamer", "HP"],
+    "image": "https://http2.mlstatic.com/D_NQ_NP_971734-MLA48635086956_122021-O.jpg",
+    "reference": "95489"
+  },
+  {
+    "id": 6,
+    "title": "Laptop HP GTX3090",
+    "price": "20000",
+    "distributor": "HP Company",
+    "currency": "COP",
+    "tags": ["Tecnology", "Gamer", "HP"],
+    "image": "https://http2.mlstatic.com/D_NQ_NP_971734-MLA48635086956_122021-O.jpg",
+    "reference": "95490"
+  }
+]
