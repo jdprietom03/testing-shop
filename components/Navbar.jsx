@@ -13,9 +13,12 @@ export default function Navbar() {
   useEffect(() => {
     if (!myCart.current) return;
 
-    const { x, y } = myCart.current.getBoundingClientRect();
+    const { x, y, width, height } = myCart.current.getBoundingClientRect();
 
-    setCoordinates([screen.width - screen.availWidth, y]);
+    setCoordinates([
+      document.documentElement.clientWidth - x - Math.floor(width / 1),
+      height + 2 * y,
+    ]);
   }, [myCart]);
 
   return (

@@ -54,3 +54,23 @@
 .item_quantity {
   font-size: 0.8rem;
 }
+
+.modal_cart span:global(.mini-clip) {
+  clip: rect(-5px, 21px, 8px, -7px);
+  display: inline-block;
+  right: 3px;
+  position: absolute;
+  top: -7px;
+  z-index: 1;
+}
+
+.modal_cart span:global(.mini-clip) span:global(.intern_body) {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.1rem;
+  box-shadow: rgb(32 33 34 / 20%) -4px -4px 12px -5px;
+  height: 16px;
+  transform: rotate(45deg);
+  width: 16px;
+  display: block;
+}

@@ -29,10 +29,14 @@ export default function ModalCart({ coordinates }) {
     if (!myBox.current || !coordinates) return;
 
     myBox.current.style.right = `${coordinates[0]}px`;
+    myBox.current.style.top = `${coordinates[1]}px`;
   }, [myBox, coordinates]);
 
   return (
     <div className={classes.modal_cart} ref={myBox}>
+      <span className="mini-clip">
+        <span className="intern_body"></span>
+      </span>
       <div className={classes.modal_cart_body}>
         <div className={classes.modal_cart_header}>
           <h5>Carrito</h5>
