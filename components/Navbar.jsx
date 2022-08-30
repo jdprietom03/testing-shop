@@ -1,9 +1,14 @@
+import { useRef } from 'react';
+
 import classes from './../styles/Home.module.css';
 import Menu from './../icons/menu';
 import Cart from './../icons/cart';
 import Link from 'next/link';
+import ModalCart from './ModalCart';
 
 export default function Navbar() {
+  const myCart = useRef(null);
+
   return (
     <nav className={classes.nav}>
       <div className={classes.nav_body}>
@@ -18,6 +23,7 @@ export default function Navbar() {
                 <Cart />
               </a>
             </Link>
+            <ModalCart />
           </div>
         </div>
       </div>

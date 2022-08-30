@@ -14,7 +14,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 12px 10px;
+  padding: 12px 14px;
 }
 
 .nav_menu {
@@ -38,5 +38,5 @@
   height: 16px;
   position: absolute;
   top: 4px;
-  right: 4px;
+  right: 6px;
 }
