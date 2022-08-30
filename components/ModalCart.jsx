@@ -1,3 +1,5 @@
+import { useRef, useEffect } from 'react';
+
 import { useUserContext } from '../context/UserContextProvider';
 import { convertToCurrency } from '../util/utils';
 import classes from './../styles/Cart.module.css';
@@ -19,11 +21,18 @@ function Item({ image, title, price, currency }) {
   );
 }
 
-export default function ModalCart() {
+export default function ModalCart({ coordinates }) {
   const { cartProducts } = useUserContext();
+  const myBox = useRef(null);
+
+  useEffect(() => {
+    if (!myBox.current || !coordinates) return;
+
+    myBox.current.style.right = `${coordinates[0]}px`;
+  }, [myBox, coordinates]);
 
   return (
-    <div className={classes.modal_cart}>
+    <div className={classes.modal_cart} ref={myBox}>
       <div className={classes.modal_cart_body}>
         <div className={classes.modal_cart_header}>
           <h5>Carrito</h5>

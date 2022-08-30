@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import classes from './../styles/Home.module.css';
 import Menu from './../icons/menu';
@@ -8,6 +8,15 @@ import ModalCart from './ModalCart';
 
 export default function Navbar() {
   const myCart = useRef(null);
+  const [coordinates, setCoordinates] = useState(null);
+
+  useEffect(() => {
+    if (!myCart.current) return;
+
+    const { x, y } = myCart.current.getBoundingClientRect();
+
+    setCoordinates([screen.width - screen.availWidth, y]);
+  }, [myCart]);
 
   return (
     <nav className={classes.nav}>
@@ -16,14 +25,14 @@ export default function Navbar() {
           <Menu />
         </div>
         <div className={classes.actions}>
-          <div className={classes.action_cart}>
+          <div className={classes.action_cart} ref={myCart}>
             <Link href="/see/cart">
               <a>
                 <span className="cart-selected">0</span>
                 <Cart />
               </a>
             </Link>
-            <ModalCart />
+            <ModalCart coordinates={coordinates} />
           </div>
         </div>
       </div>
