@@ -8,11 +8,32 @@
   background-color: white;
   box-shadow: 1px 0px 1px whitesmoke;
   border: 1px solid #ddd;
+  animation: 1s openCart alternate;
+  overflow: hidden;
+  height: 100%;
+  user-select: none;
+}
+
+@keyframes openCart {
+  0% {
+    max-height: 0px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    max-height: 300px;
+  }
 }
 
 .modal_cart_header {
   padding: 8px 8px;
   border-bottom: 1px solid #ddd;
+}
+
+.modal_cart_action {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding: 8px 8px;
 }
 
 .item {

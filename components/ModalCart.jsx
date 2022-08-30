@@ -21,7 +21,7 @@ function Item({ image, title, price, currency }) {
   );
 }
 
-export default function ModalCart({ coordinates }) {
+export default function ModalCart({ coordinates, enabled }) {
   const { cartProducts } = useUserContext();
   const myBox = useRef(null);
 
@@ -31,6 +31,8 @@ export default function ModalCart({ coordinates }) {
     myBox.current.style.right = `${coordinates[0]}px`;
     myBox.current.style.top = `${coordinates[1]}px`;
   }, [myBox, coordinates]);
+
+  if (!enabled) return <></>;
 
   return (
     <div className={classes.modal_cart} ref={myBox}>
@@ -46,6 +48,7 @@ export default function ModalCart({ coordinates }) {
             <Item {...product} />
           ))}
         </div>
+        <div className={classes.modal_cart_action}>Ver carrito</div>
       </div>
     </div>
   );

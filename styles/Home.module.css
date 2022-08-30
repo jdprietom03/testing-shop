@@ -22,8 +22,35 @@
   width: 24px;
 }
 
+.actions {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.action_search {
+  flex-basis: 80%;
+}
+
+.action_search input {
+  width: 90%;
+  border: none;
+  padding-left: 1.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #aaa;
+  background-image: url('/search.svg');
+  background-repeat: no-repeat;
+  background-size: 1rem;
+}
+
 .action_cart {
   width: 24px;
+}
+
+.action_cart a {
+  display: block;
+  cursor: pointer;
 }
 
 .action_cart span:global(.cart-selected) {
