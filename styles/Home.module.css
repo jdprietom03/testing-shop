@@ -43,6 +43,7 @@
   background-image: url('/search.svg');
   background-repeat: no-repeat;
   background-size: 1rem;
+  -webkit-appearance: none;
 }
 
 .action_cart {
